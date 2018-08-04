@@ -1,0 +1,15 @@
+@media screen {
+
+    * {
+        font-family: "Impact";
+        font-size: 30px;
+    }
+
+    body {
+        max-width: 900px;
+        padding: 50px;
+    }
+
+    img.face {
+    }
+}
