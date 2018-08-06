@@ -1,7 +1,10 @@
 #FacesBookRawHtml
 
-After cloning this repo...
-- open faces-book-raw-html/app/public/index.html in your browser
+After cloning this repo, you can open
+./faces-book-raw-html/app/public/index.html in your
+browser
+
+- - - -
 
 Assuming you're on a box running docker...
 ```
@@ -13,11 +16,15 @@ Assuming you're on a box running docker...
 curl ifconfig.me
 ```
 
+- - - -
+
 Implemented using
 [Node](https://nodejs.org/en/) and
 [Docker](https://www.docker.com/)
 
 Hello to the class of Chennai 2018 :-)
 
+- - - -
+##Screenshot
 ![screenshot](/img/faces-book.png)
 
