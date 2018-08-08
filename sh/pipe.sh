@@ -21,4 +21,4 @@ ${MY_DIR}/down.sh
 ${MY_DIR}/up.sh $*
 sleep 0.5
 ${MY_DIR}/logs.sh
-${MY_DIR}/test.sh $*
+${MY_DIR}/curl_test.sh $*
