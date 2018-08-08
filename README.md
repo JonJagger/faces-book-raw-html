@@ -6,7 +6,8 @@ browser
 
 - - - -
 
-If you're not running Docker you'll need Node installed.
+##If you're not running Docker
+You'll need Node installed.
 
 You can run the js unit tests...
 ```
@@ -28,7 +29,8 @@ Once the web server is up you can test it by poking it with curl...
 
 - - - -
 
-If you're on a box running Docker you don't need Node installed...
+##If you're running Docker
+You don't need Node installed...
 ```
 ./faces-book-node/sh/pipe.sh 81
 ```
