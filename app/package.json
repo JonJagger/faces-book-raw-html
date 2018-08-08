@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Node.js on Docker",
   "author": "Jon Jagger <jon@jaggersoft.com>",
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "https://bitbucket.org/JonJagger/node-web-server"
   },
