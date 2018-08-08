@@ -2,12 +2,6 @@
 
 const express = require('express');
 const runTests = require('./public/js/tests/run.js');
-
-// Constants
-const PORT = process.env.NODE_PORT;
-const HOST = '0.0.0.0';
-
-// App
 const app = express();
 
 app.use(express.static('./public'))
@@ -20,5 +14,7 @@ app.get('/test', (req,res) => {
   res.json({"runTests":runTests()});
 });
 
-app.listen(PORT, HOST);
+const PORT = process.env.NODE_PORT;
+const HOST = '0.0.0.0';
+app.listen(PORT);
 console.log(`Running on http://${HOST}:${PORT}`);
