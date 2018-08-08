@@ -6,11 +6,31 @@ browser
 
 - - - -
 
-Assuming you're on a box running docker...
+If you've got Node installed then to start the web server on port 81...
 ```
-./faces-book-node/sh/pipe.sh
+cd app
+npm install
+export NODE_PORT=81
+npm start
 ```
-- Your docker container will now be up on port 80
+
+If the web server is up you can test it by poking it with curl...
+```
+./sh/run_curl_tests.sh 81
+```
+
+If the web server is not up you can still run the js unit tests...
+```
+./sh/run_js_tests.sh
+```
+
+- - - -
+
+If you're on a box running Docker...
+```
+./faces-book-node/sh/pipe.sh 81
+```
+- Your docker container will now be up on port 81
 - To find your public IP address you can use
 ```
 curl ifconfig.me
@@ -19,7 +39,8 @@ curl ifconfig.me
 - - - -
 
 Implemented using
-[Node](https://nodejs.org/en/) and
+[Node](https://nodejs.org/en/),
+[Express](https://expressjs.com) and
 [Docker](https://www.docker.com/)
 
 Hello to the class of Chennai 2018 :-)
