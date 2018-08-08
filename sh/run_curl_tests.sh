@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -x
+# The faces-book server must be running on the given port
 
 readonly PORT=${1:-80}
 readonly IP=${2:-localhost}
