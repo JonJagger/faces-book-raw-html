@@ -4,8 +4,8 @@
   "description": "Node.js on Docker",
   "author": "Jon Jagger <jon@jaggersoft.com>",
   "repository" : {
-    "type" : "git",
-    "url" : "https://bitbucket.org/JonJagger/node-web-server"
+    "type": "git",
+    "url": "https://bitbucket.org/JonJagger/node-web-server"
   },
   "main": "server.js",
   "scripts": {
