@@ -13,7 +13,6 @@
     "stop": "killall -SIGINT faces-book"
   },
   "dependencies": {
-    "express": "^4.16.1",
-    "socket"
+    "express": "^4.16.1"
   }
 }
