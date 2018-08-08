@@ -1,6 +1,7 @@
 'use strict';
 
 const express = require('express');
+const runTests = require('./public/js/tests/run.js');
 
 // Constants
 const PORT = process.env.NODE_PORT;
@@ -13,6 +14,10 @@ app.use(express.static('./public'))
 
 app.get('/', (req, res) => {
   res.sendFile(path.join('./index.html'));
+});
+
+app.get('/test', (req,res) => {
+  res.json({"runTests":runTests()});
 });
 
 app.listen(PORT, HOST);

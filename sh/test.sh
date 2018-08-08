@@ -21,6 +21,12 @@ result()
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-echo "faces-book: Basic route checking..."
+echo "faces-book: Running unit tests..."
+
+curl -i -f -X GET http://${IP}:${PORT}/test &> ${LOG}
+result $? '/test'
+
+echo "faces-book: Checking routes are 200..."
+
 curl -i -f -X GET http://${IP}:${PORT}/ &> ${LOG}
 result $? '/'
