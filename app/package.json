@@ -9,10 +9,11 @@
   },
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "stop": "node server.stop.js"
+    "start": "node server.js faces-book",
+    "stop": "killall -SIGINT faces-book"
   },
   "dependencies": {
-    "express": "^4.16.1"
+    "express": "^4.16.1",
+    "socket"
   }
 }
