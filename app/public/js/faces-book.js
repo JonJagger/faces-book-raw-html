@@ -1,11 +1,12 @@
 $(document).ready(function() {
 
-  // ready for Javascript which will run when the html is loaded
+  const faces = $('faces');
 
-  // Add  <b>Hello</b> after <faces>
-
-  //const faces = $('faces');
-  //const add = $('<b>').html('Hello');
-  //faces.append(add);
+  const thiru = $('<img>', {
+    title:"Thiru",
+      src:"img/2018/Thiru.jpg",
+    class:"face"
+  });
+  faces.append(thiru);
 
 });
