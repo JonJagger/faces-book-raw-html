@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(() => {
 
   const faces = $('faces');
 
