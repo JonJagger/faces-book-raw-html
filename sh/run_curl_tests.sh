@@ -1,6 +1,8 @@
 #!/bin/bash
 # The faces-book server must be running on the given port
 
+readonly MY_DIR="$( cd "$( dirname "${0}" )" && pwd )"
+
 readonly PORT=${1:-80}
 readonly IP=${2:-localhost}
 readonly LOG="/tmp/faces-book.log"
@@ -16,6 +18,7 @@ result()
   else
     echo "FAIL ${status} ${path}"
     cat ${LOG}
+    ${MY_DIR}/logs.sh
   fi
 }
 
