@@ -7,7 +7,7 @@ readonly MY_DIR="$( cd "$( dirname "${0}" )" && pwd )"
 
 show_use()
 {
-  echo 'USE: pipe.sh [PORT] [IP_ADDRESS]'
+  echo 'USE: docker_pipe.sh [PORT] [IP_ADDRESS]'
   echo '  PORT defaults to 80'
   echo '  IP_ADDRESS defaults to localhost'
   echo
