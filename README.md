@@ -32,7 +32,7 @@ Once the web server is up you can test it by poking it with curl...
 ##If you're running Docker
 You don't need Node installed...
 ```
-./faces-book-node/sh/pipe.sh 81
+./faces-book-node/sh/docker_pipe.sh 81
 ```
 - Your docker container will now be up on port 81
 - To find your public IP address you can use
