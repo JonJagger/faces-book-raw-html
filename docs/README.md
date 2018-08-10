@@ -7,11 +7,9 @@ browser
 - - - -
 
 ## if you're not running Docker
-You'll need Node installed.
-
 You can run the js unit tests...
 ```
-./sh/run_js_tests.sh
+./sh/run_node_js_tests.sh
 ```
 
 To start the web server on port 81...
@@ -28,11 +26,11 @@ Once the web server is up you can test it by poking it with curl...
 - - - -
 
 ## if you're running Docker
-You don't need Node installed...
+You can run Node inside a container...
 ```
 ./sh/docker_pipe.sh 81
 ```
-- Your docker container will now be up on port 81
+- Your container will now be up on port 81
 - To find your public IP address you can use
 ```
 curl ifconfig.me
