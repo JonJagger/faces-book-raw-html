@@ -1,11 +1,12 @@
 {
-  "name": "docker_web_app",
+  "name": "FacesBook",
   "version": "1.0.0",
-  "description": "Node.js on Docker",
+  "description": "a simple app to help remember people's names",
   "author": "Jon Jagger <jon@jaggersoft.com>",
+  "license" : "BSD-2-Clause",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/JonJagger/node-web-server"
+    "url": "https://bitbucket.org/JonJagger/faces-book-raw-html"
   },
   "main": "server.js",
   "scripts": {
