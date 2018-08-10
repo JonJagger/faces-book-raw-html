@@ -1,4 +1,4 @@
-#FacesBookRawHtml
+# faces-book-raw-html
 
 After cloning this repo, you can open
 ./faces-book-raw-html/app/public/index.html in your
@@ -6,7 +6,7 @@ browser
 
 - - - -
 
-##If you're not running Docker
+## if you're not running Docker
 You'll need Node installed.
 
 You can run the js unit tests...
@@ -27,7 +27,7 @@ Once the web server is up you can test it by poking it with curl...
 
 - - - -
 
-##If you're running Docker
+## if you're running Docker
 You don't need Node installed...
 ```
 ./sh/docker_pipe.sh 81
@@ -48,6 +48,6 @@ Implemented using
 Hello to the class of Chennai 2018 :-)
 
 - - - -
-##Screenshot
+## screenshot
 ![screenshot](/img/faces-book.png)
 
