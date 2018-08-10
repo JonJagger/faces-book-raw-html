@@ -5,19 +5,20 @@ readonly MY_DIR="$( cd "$( dirname "${0}" )" && pwd )"
 
 readonly PORT=${1:-80}
 readonly IP=${2:-localhost}
-readonly LOG="/tmp/faces-book.log"
+readonly CURL_LOG="/tmp/faces-book-curl.log"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-result()
+curl_route()
 {
-  status=$1
-  path=$2
+  route=$1
+  curl -i -f -X GET "http://${IP}:${PORT}${route}" &> ${CURL_LOG}
+  status=$?
   if [ "${status}" -eq "0" ]; then
-    echo "PASS ${status} ${path}"
+    echo "PASS ${status} ${route}"
   else
-    echo "FAIL ${status} ${path}"
-    cat ${LOG}
+    echo "FAIL ${status} ${route}"
+    cat ${CURL_LOG}
     ${MY_DIR}/logs.sh
   fi
 }
@@ -25,11 +26,7 @@ result()
 # - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 echo "faces-book: Running unit tests..."
-
-curl -i -f -X GET http://${IP}:${PORT}/test &> ${LOG}
-result $? '/test'
+curl_route "/test"
 
 echo "faces-book: Checking routes are 200..."
-
-curl -i -f -X GET http://${IP}:${PORT}/ &> ${LOG}
-result $? '/'
+curl_route "/"
